@@ -16,7 +16,7 @@
             <a href="#" class="nav-button">Новинки</a>
             <a href="#" class="nav-button">Женщинам</a>
             <a href="#" class="nav-button">Мужчинам</a>
-            <a href="#" class="nav-button">Лето</a>
+            <a href="#" class="nav-button">Как нас найти</a>
         </nav>
         <div class="icon-container">
             <form class="search-form" action="/search" method="get">
@@ -37,137 +37,80 @@
         </div>
     </header>
 
-    <main>
+<main>
     <div class="gallery">
-        <button id="left-button">
-            <img src="arrow_left.svg" alt="Назад">
+        <button id="left-button" class="button-abs">
+            <img src="..\backshop\icons\arrow_left.svg" alt="Назад">
         </button>
         <div id="image-container">
-            <img class="gallery-image" src="..\backshop\images\image1.png" alt="Фото 1">
-            <img class="gallery-image" src="..\backshop\images\image2.png" alt="Фото 2">
-            <img class="gallery-image" src="..\backshop\images\image3.png" alt="Фото 3">
-            <img class="gallery-image" src="..\backshop\images\image4.png" alt="Фото 4">
+            <img class="gallery-image" src="novelties.png" alt="Фото 1">
+            <img class="gallery-image" src="summer offer.png" alt="Фото 2">
+            <img class="gallery-image" src="discounts.png" alt="Фото 3">
+            <img class="gallery-image" src="for men.png" alt="Фото 4">
         </div>
-        <button id="right-button">
-            <img src="arrow_right.svg" alt="Вперед">
+        <button id="right-button" class="button-abs">
+            <img src="..\backshop\icons\arrow_right.svg" alt="Вперед">
         </button>
     </div>
 
-<div class="main-title-container">
-    <h1 class="main-title">Бренды</h1>
-</div>
+    <div class="main-title-container">
+        <h1 class="main-title">Лето 2023</h1>
+    </div>
 
-<div class="product-grid">
-    <!-- JOLIDON -->
-    <div class="brand-section">
-        <h2>JOLIDON (Румыния)</h2>
-        <div class="category-section">
-            <h3>Белье</h3>
+    <div class="brand-grid">
+        <div class="brand-section">
+            <h2>Купальники</h2>
+            <button class="view-button">Посмотреть</button>
             <div class="product-item">
-                <img class="product-image" src="image1.jpg" alt="Продукт 1">
+                <img class="product-image" src="swimwear.png" alt="Продукт 2">
                 <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
+                    <img class="like-icon add-like" src="..\backshop\icons\heart_plus.svg" alt="Добавить в избранное">
+                    <img class="like-icon remove-like" src="..\backshop\icons\heart_minus.svg"
+                        alt="Удалить из избранного" style="display: none;">
                 </button>
             </div>
         </div>
-    </div>
-    <!-- KRISLINE -->
-    <div class="brand-section">
-        <h2>KRISLINE (Польша)</h2>
-        <div class="category-section">
-            <h3>Бюстгальтеры</h3>
-            <div class="product-item">
-                <img class="product-image" src="image2.jpg" alt="Продукт 2">
-                <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- VALMIRA -->
-    <div class="brand-section">
-        <h2>VALMIRA (Прибалтика)</h2>
-        <div class="category-section">
-            <h3>Бюстгальтеры</h3>
-            <div class="product-item">
-                <img class="product-image" src="image3.jpg" alt="Продукт 3">
-                <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- GORSENIA -->
-    <div class="brand-section">
-        <h2>GORSENIA (Польша)</h2>
-        <div class="category-section">
-            <h3>Бюстгальтеры</h3>
-            <div class="product-item">
-                <img class="product-image" src="image4.jpg" alt="Продукт 4">
-                <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Лагуна -->
-    <div class="brand-section">
-        <h2>Лагуна (Прибалтика)</h2>
-        <div class="category-section">
-            <h3>Бюстгальтеры</h3>
-            <div class="product-item">
-                <img class="product-image" src="image5.jpg" alt="Продукт 5">
-                <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Gatta -->
-    <div class="brand-section">
-        <h2>Gatta (Польша)</h2>
-        <div class="category-section">
-            <h3>Колготки</h3>
-            <div class="product-item">
-                <img class="product-image" src="image6.jpg" alt="Продукт 6">
-                <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Конте -->
-    <div class="brand-section">
-        <h2>Конте (Беларусь)</h2>
-        <div class="category-section">
-            <h3>Бюстгальтеры</h3>
-            <div class="product-item">
-                <img class="product-image" src="image7.jpg" alt="Продукт 7">
-                <button class="like-button">
-                    <img class="like-icon add-like" src="heart_plus.svg" alt="Добавить в избранное">
-                    <img class="like-icon remove-like" src="heart_minus.svg" alt="Удалить из избранного"
-                        style="display: none;">
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
 
+        <div class="brand-section">
+            <h2>Бюстгальтера</h2>
+            <button class="view-button">Посмотреть</button>
+            <div class="product-item">
+                <img class="product-image" src="bra.png" alt="Продукт 2">
+                <button class="like-button">
+                    <img class="like-icon add-like" src="..\backshop\icons\heart_plus.svg" alt="Добавить в избранное">
+                    <img class="like-icon remove-like" src="..\backshop\icons\heart_minus.svg"
+                        alt="Удалить из избранного" style="display: none;">
+                </button>
+            </div>
+        </div>
 
-    </main>
+        <div class="brand-section">
+            <h2>Трусики</h2>
+            <button class="view-button">Посмотреть</button>
+            <div class="product-item">
+                <img class="product-image" src="panties.png" alt="Продукт 2">
+                <button class="like-button">
+                    <img class="like-icon add-like" src="..\backshop\icons\heart_plus.svg" alt="Добавить в избранное">
+                    <img class="like-icon remove-like" src="..\backshop\icons\heart_minus.svg"
+                        alt="Удалить из избранного" style="display: none;">
+                </button>
+            </div>
+        </div>
 
+        <div class="brand-section">
+            <h2>Бельё для мужчин</h2>
+            <button class="view-button">Посмотреть</button>
+            <div class="product-item">
+                <img class="product-image" src="underwear for men.png" alt="Продукт 2">
+                <button class="like-button">
+                    <img class="like-icon add-like" src="..\backshop\icons\heart_plus.svg" alt="Добавить в избранное">
+                    <img class="like-icon remove-like" src="..\backshop\icons\heart_minus.svg"
+                        alt="Удалить из избранного" style="display: none;">
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
     <footer class="footer">
         <div class="founder-info">
             <p>ИП: Игорь ...</p>
@@ -175,7 +118,7 @@
         <div class="call-button">
             <div class="phone-info">
                 <a href="tel:+795555555">
-                    <img src="call_icon.svg" alt="Call Us">
+                    <img src="..\backshop\icons\call_icon.svg" alt="Call Us">
                 </a>
                 <p>+795555555</p>
             </div>

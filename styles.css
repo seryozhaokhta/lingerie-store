@@ -99,7 +99,7 @@ body {
     display: none;
 }
 
-button {
+.button-abs {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -141,6 +141,32 @@ button img {
 
 .brand-section {
     grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2
+    0px;
+}
+
+@media (max-width: 600px) {
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.view-button {
+    background-color: #eee;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    cursor: pointer;
 }
 
 .category-section {
@@ -149,19 +175,17 @@ button img {
     gap: 10px;
 }
 
-/* .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-} */
-
 .product-image {
-    width: 100%;
+    width: 25%;
     height: auto;
 }
 
 .product-item {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .like-button {
@@ -179,28 +203,6 @@ button img {
     height: 20px;
 }
 
-@media (min-width: 601px) {
-    .nav {
-        display: flex;
-    }
-
-    .burger-icon,
-    .search-icon {
-        display: none;
-    }
-
-    .search-form {
-        display: block;
-    }
-
-    .icon img {
-        width: 25px;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
 
 @media (max-width: 600px) {
     .nav {
@@ -224,3 +226,5 @@ button img {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+
+

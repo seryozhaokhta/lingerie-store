@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Каталог купальников</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="swimwear_styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="..\backshop\icons\logo.svg" alt="Логотип">
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-button">Новинки</a>
+            <a href="#" class="nav-button">Женщинам</a>
+            <a href="#" class="nav-button">Мужчинам</a>
+            <a href="#" class="nav-button">Как нас найти</a>
+        </nav>
+        <div class="icon-container">
+            <form class="search-form" action="/search" method="get">
+                <input type="text" name="q" placeholder="Поиск">
+            </form>
+            <div class="icon search-icon">
+                <img src="..\backshop\icons\search.svg" alt="Поиск">
+            </div>
+            <div class="icon heart-icon">
+                <img src="..\backshop\icons\favorite.svg" alt="Избранное">
+            </div>
+            <div class="icon cart-icon">
+                <img src="..\backshop\icons\shopping_basket.svg" alt="Корзина">
+            </div>
+            <div class="icon burger-icon">
+                <img src="..\backshop\icons\burger.svg" alt="Меню">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-title-container">
+            <h1 class="main-title">Каталог купальников</h1>
+        </div>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img class="product-image" src="swimwear1.png" alt="Купальник 1">
+        <button class="like-button">
+            <img class="like-icon add-like" src="..\backshop\icons\heart_plus.svg" alt="Добавить в избранное">
+            <img class="like-icon remove-like" src="..\backshop\icons\heart_minus.svg" alt="Удалить из избранного"
+                style="display: none;">
+        </button>
+        <h3 class="product-title">Купальник 1</h3>
+        <p class="product-price">3500 руб.</p>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="founder-info">
+            <p>ИП: Игорь ...</p>
+        </div>
+        <div class="call-button">
+            <div class="phone-info">
+                <a href="tel:+795555555">
+                    <img src="..\backshop\icons\call_icon.svg" alt="Call Us">
+                </a>
+                <p>+795555555</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="swimwear_javascript.js"></script>
+</body>
+
+</html>
