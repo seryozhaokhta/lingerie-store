@@ -1,6 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.logo {
+    grid-column: 1 / 2;
+}
+
+.nav {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    grid-column: 2 / 3;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.icon-container {
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.burger-icon,
+.search-icon {
+    display: none;
+}
+
+.icon img {
+    width: 25px;
+    height: auto;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+}
+
+.call-button {
+    display: flex;
+    align-items: center;
+}
+
+.phone-info {
+    display: flex;
+    align-items: center;
+}
+
+.phone-info img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
 }
 
@@ -8,28 +90,66 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
+    padding: 10px;
+    width: 25%;
 }
 
-.product-image {
+.swimwear-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
-.product-title {
-    text-align: center;
-    font-size: 1.2em;
-}
-
+.product-title,
 .product-price {
+    width: 100%;
     text-align: center;
-    font-size: 1em;
-    color: #333;
+}
+
+.like-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.like-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .burger-icon,
+    .search-icon {
+        display: block;
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    .icon img {
+        width: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 @media (max-width: 600px) {
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
